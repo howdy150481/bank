@@ -1,0 +1,25 @@
+.material-icons, .material-icons-two-tone {
+    position: relative;
+    top: 3px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 1;
+    letter-spacing: inherit;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.display-none {
+    display: none;
+}
+
+.required label:after {
+    content:" *";
+    color: red;
+}

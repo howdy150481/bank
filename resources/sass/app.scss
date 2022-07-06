@@ -1,0 +1,17 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+//@import '~bootstrap/scss/bootstrap';
+@import "~bootswatch/dist/zephyr/variables";
+@import "~bootstrap/scss/bootstrap";
+@import "~bootswatch/dist/zephyr/bootswatch";
+
+// Sweet Alert 2
+@import "~sweetalert2/src/sweetalert2";
+
+// Material Icons
+@import "~material-icons/iconfont/material-icons.css";
