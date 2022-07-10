@@ -45,12 +45,7 @@ class BookingsController extends Controller
         $player->value = 0;
         $player->save();
 
-        $backlink = '/' . $request->backlink;
-        if($request->playerId > 0) {
-            $backlink .= '/' . $request->playerId;
-        }
-
-        return redirect($backlink)
+        return redirect(route($request->backlink, $request->playerId ?? ''))
             ->with('icon', 'success')
             ->with('title', 'Spieler angelegt');
     }
@@ -67,12 +62,7 @@ class BookingsController extends Controller
             }
         }
 
-        $backlink = '/' . $request->backlink;
-        if($request->playerId > 0) {
-            $backlink .= '/' . $request->playerId;
-        }
-
-        return redirect($backlink)
+        return redirect(route($request->backlink, $request->playerId ?? ''))
             ->with('icon', 'warning')
             ->with('title', 'Spieler gelöscht');
     }
@@ -84,12 +74,7 @@ class BookingsController extends Controller
             ::query()
             ->update(['value' => 0]);
 
-        $backlink = '/' . $request->backlink;
-        if($request->playerId > 0) {
-            $backlink .= '/' . $request->playerId;
-        }
-
-        return redirect($backlink)
+        return redirect(route($request->backlink, $request->playerId ?? ''))
             ->with('icon', 'success')
             ->with('title', 'Neues Spiel gestartet');
 

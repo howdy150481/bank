@@ -48,6 +48,16 @@
                 @endif
                 <li><hr class="dropdown-divider"></li>
                 <li>
+                     <span
+                         class="dropdown-item"
+                         id="new-player"
+                         data-backlink="{{ Route::currentRouteName() }}"
+                         data-player-id="{{ $playerId ?? 0 }}"
+                     >
+                        Neuer Spieler
+                    </span>
+                </li>
+                <li>
                     <a
                         class="dropdown-item new-game"
                         href="#"
